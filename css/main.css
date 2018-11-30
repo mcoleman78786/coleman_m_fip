@@ -1,0 +1,511 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Remove this rule, this is only for demo purposes to make the boxes black with white text
+The line height on the <p> tag gives each box a height value*/
+
+
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img 
+{ 
+	border: none;
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body 
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+#topBar
+{
+	background-color: #21011b;
+	height: 20px;
+	width: 1450px;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer 
+{
+	margin: 0 auto;
+	width: 920px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: white;
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+	margin-top: -0.3px;
+	padding-bottom: 40px;
+	width: 920px;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	border-bottom: solid 1px #DDD;
+	background-color: white;
+}
+
+/*This is a flex item*/
+#logo
+{
+	width: 100px;
+}
+
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+#mainNav 
+{
+	margin-left: auto;
+	width: 500px;
+}
+
+#mainNav ul
+{
+	font-family: Apple Chancery, cursive;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	padding-left: 10%;
+	margin-left: 80px;
+	width: 300px;
+}
+
+
+#mainNav li a
+{
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	width: 62px;
+	margin-left: 3px;
+}
+
+#mainNav ul li a
+{
+	color: #21011b;
+	text-decoration: underline;
+}
+
+
+.divider
+{
+	position: absolute;
+	margin-left:10px;
+}
+
+
+#searchbar
+{
+	margin-left: -310px;
+	padding-top: 50px;
+}
+
+
+
+#promo 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+/*Get rid of this, here just to give different height to promo*/
+#promo p 
+{
+	line-height: 250px;
+}
+
+#promoText 
+{
+	width: 600px;
+}
+
+#promoImage 
+{
+	margin-left: auto;
+	width: 280px;
+}
+
+#productInfo 
+{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;;
+}
+
+
+/*Get rid of this, here just to give different height to productInfo*/
+#productInfo p 
+{
+	line-height: 300px;
+}
+
+.productDesc 
+{
+	width: 200px;
+}
+
+
+{
+	background-image: url();
+}
+
+
+
+#contactUs h2
+{
+	color: #21011b;
+	font-size: 35px;
+	font-family: Apple Chancery, cursive;
+}
+
+input, textarea
+{
+	background-color: #dcaee0;
+	color:black;
+	width: 400px;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+
+#mainFooter 
+{
+ 	height: 125px;
+	background-color: #ccc;
+	display: flex;
+	flex-direction: row;
+}
+
+
+#footerNav ul
+{
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	justify-content: space-evenly;
+	width: 400px;
+}
+
+
+#footerNav ul li a
+{
+	color: #21011b;
+	text-decoration: underline;
+	font-family: Apple Chancery, cursive;
+}
+
+
+.icons ul
+{
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	justify-content: space-evenly;
+	width: 250px;
+}
+
+.copyRight 
+{
+	padding-top: 12footerpx; 
+	width: 900px
+}
+
+/*Page 2 - Notice we are using one style sheet for all of the pages*/
+
+#contentCon {
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+/*Get rid of this, here just to give different height to promo*/
+
+.container
+{
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px
+}
+
+.contactInfo
+{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	flex-direction: row;
+}
+
+
+#contentCon p 
+{
+	line-height: 630px;
+}
+
+#content1 
+{
+	width: 440px;
+}
+
+#content2 
+{
+	margin-left: auto;
+	width: 440px;
+}
+
+/*Page 3*/
+
+#productImages 
+{
+
+}
+
+/*Get rid of this, here just to give different height*/
+#productImages p
+{
+	margin-top: 240px;
+	padding-bottom: 140px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.productImg 
+{
+	display: inline;
+}
+
+.column
+{
+	width: 50%;
+	padding: 4%;
+}
+
+
+.row
+{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.picContact
+{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+
+/*Get rid of this, here just to give different height*/
+#contentAreaBig p 
+{
+	line-height: 300px;
+}
+
+#promoImageBig
+{
+	width: 920px;
+	height: 300px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+.purplebar
+{
+	height: 68px;
+	width: 928px;
+	background-color: #f8e1f6;
+	position: relative;
+	top: 344px;
+	opacity: 1.0;
+	text-align: left;
+
+}
+
+
+.purplebar p
+{
+	position: absolute;
+	left: 300px;
+	font-size: 20px;
+	top: 18px;
+	color: black;
+}
+
+
+.smallBar
+{
+	position: relative;
+	background-color: #f8e1f6;
+	height: 68px;
+	width: 450px;
+	top: 234px;
+	left: -20px;
+	margin-left: -430px;
+	opacity: 1.0;
+	text-align: center;
+}
+
+
+.smallBar p
+{
+	position: relative;
+	left: -230px;
+	font-size: 20px;
+	top: 20px;
+	width: 900px;
+	padding: top;
+	color: black;
+}
+
+.bars
+{
+	position: relative;
+	width: 1000px;
+	
+}
+
+
+.bigBar
+{
+	position: relative;
+	background-color: #f8e1f6;
+	height: 68px;
+	width: 450px;
+	opacity: 1.0;
+	top: 234px;
+	left: -450px;
+	text-align: center;
+}
+
+
+.bigBar p
+{	
+	position: relative;
+	left: 90px;
+	font-size: 20px;
+	top: 5px;
+	width: 300px;
+	padding: top;
+	color: black;
+}
+
+
+.gallery
+{
+	font-size: 40px;
+	color: #3a012f;
+	font-family: Apple Chancery, cursive;
+}
+
+
+.redFlowers
+{
+	margin-left: 20px;
+}
+
+
+/*Page 4*/
+
+.productDescLargeLeft 
+{
+	width: 10px;
+}
+
+.productDescLargeRight 
+{
+	display: flex;
+	flex-direction: row;
+}
+#content1
+{
+	
+}
+
+.content2
+{
+	display:;
+	width: 440px;
+	margin-left: 200px;
+}
+
+.girl
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+
+.guy
+{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 250px;
+
+}
+
+
+
+body
+{
+	background-image: url(../images/pattern.png)
+}
+
+
